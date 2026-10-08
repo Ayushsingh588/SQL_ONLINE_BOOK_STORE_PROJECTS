@@ -32,17 +32,17 @@ CREATE TABLE Orders (
 
 -- Import Data into Books Table
 COPY Books(Book_ID, Title, Author, Genre, Published_Year, Price, Stock) 
-FROM '‪‪D:\publicdata\Books.csv'
+FROM '‪‪\publicdata\Books.csv'
 csv HEADER;
 
 -- Import Data into Customers Table
 COPY Customers(Customer_ID, Name, Email, Phone, City, Country) 
-FROM  '‪D:\publicdata'
+FROM  '‪\publicdata'
 CSV HEADER;
 
 -- Import Data into Orders Table
 COPY Orders(Order_ID, Customer_ID, Book_ID, Order_Date, Quantity, Total_Amount) 
-FROM '‪D:\publicdata\Orders.csv'
+FROM '‪\publicdata\Orders.csv'
 CSV HEADER;
 
 -- 1) Retrieve all books in the "Fiction" genre:
